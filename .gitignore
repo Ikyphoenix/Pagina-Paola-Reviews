@@ -1,0 +1,13 @@
+backend/.venv/
+backend/__pycache__/
+*.pyc
+
+# Angular
+frontend/node_modules/
+frontend/dist/
+
+# Visual Studio
+.vs/
+
+# Variables de entorno
+.env
