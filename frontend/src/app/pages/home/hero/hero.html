@@ -1,0 +1,176 @@
+<div class="hero-content">
+
+    <div class="hero-photo">
+        <img src="/images/Pao.jpeg" alt="Pao">
+    </div>
+
+    <h1>Paola Reviews</h1>
+
+    <h2>Creadora de contenido</h2>
+
+    <p>Lifestyle, Reviews y más</p>
+
+    <div class="buttons">
+
+        <div class="button-wrapper">
+
+            <button
+                class="glass-button action-button"
+                type="button"
+                (click)="toggleMenu('trabaja')">
+                Trabaja Conmigo
+            </button>
+
+            @if (activeMenu === 'trabaja') {
+                <div class="modal-overlay">
+                    <div class="modal-cristal">
+                        <button class="modal-close" type="button" (click)="closeMenu()">×</button>
+                        <h1>Contacto</h1>
+                        <h2>Whatsapp: (656)-150-74-53</h2>
+                        <h2>Correo: paola.machitche@gmail.com</h2>
+                    </div>
+                </div>
+            }
+        </div>
+
+
+        <div class="button-wrapper">
+
+            <button
+                class="glass-button action-button"
+                type="button"
+                (click)="toggleMenu('quien-soy')">
+                Quién Soy
+            </button>
+
+            @if (activeMenu === 'quien-soy') {
+                <div class="modal-overlay">
+                    <div class="modal-cristal">
+                        <button class="modal-close" type="button" (click)="closeMenu()">×</button>
+                        <h1>Conoceme</h1>
+                        <p>
+                            Creo contenido a partir de experiencias reales,
+                            lugares que descubro y cosas que realmente me gustan.
+                            Me gusta compartir cada experiencia de una forma cercana,
+                            visual y auténtica, para que puedas conocer un lugar
+                            y descubrir algo nuevo antes de visitarlo.
+                            No creo en recomendar algo simplemente porque sí.
+                            Cuando comparto una experiencia, quiero que puedas confiar
+                            en que estoy contando lo que realmente pienso y siento,
+                            porque una buena recomendación no tiene que ser perfecta,
+                            solo tiene que ser verdadera.
+                        </p>
+                        <div class="service">
+                            <h3> Reseñas de cafeterías y restaurantes</h3>
+                            <p>
+                                Visito lugares, pruebo sus productos y comparto mi
+                                experiencia tal como la viví. La opinión es personal,
+                                honesta y sin guiones: lo bueno, lo no tan bueno y
+                                todo aquello que considero importante compartir.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3> Descubriendo lugares</h3>
+                            <p>
+                                Me encanta encontrar cafeterías, restaurantes, rincones
+                                y pequeños negocios que vale la pena conocer y compartirlos
+                                con mi comunidad.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3> Creación de contenido</h3>
+                            <p>
+                                Videos, fotografías y contenido creativo inspirado en
+                                experiencias reales, productos, lugares y momentos cotidianos.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3> Ideas creativas</h3>
+                            <p>
+                                Busco nuevas formas de contar una historia. Desde una visita
+                                espontánea hasta una experiencia diferente, cada lugar puede
+                                tener algo especial que contar.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3> Redes sociales</h3>
+                            <p>
+                                Creación, organización y manejo de contenido para redes sociales,
+                                buscando que cada perfil tenga una identidad propia, coherente
+                                y auténtica.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3> Redes desde cero</h3>
+                            <p>
+                                Ayudo a construir una presencia digital desde el principio:
+                                creación del perfil, identidad, contenido inicial y una
+                                estrategia que tenga sentido para cada proyecto.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3> Conexión con audiencia</h3>
+                            <p>
+                                Exploro qué tipo de contenido puede conectar mejor con
+                                diferentes personas y cómo convertir una experiencia en
+                                algo que realmente genere interés y conversación.
+                            </p>
+                        </div>
+
+                        <div class="service">
+                            <h3> Gestión inteligente de contenido</h3>
+                            <p>
+                                Organización, planificación y automatización de procesos
+                                para mantener una presencia constante en redes sin perder
+                                el lado humano y creativo.
+                            </p>
+                        </div>
+
+                        </div>
+                    </div>
+            }
+        </div>
+
+
+        <div class="button-wrapper">
+
+            <button
+                class="glass-button action-button"
+                type="button"
+                (click)="toggleMenu('redes')">
+                Reviews
+            </button>
+
+            @if (activeMenu === 'redes') {
+                <div class="dropdown">
+                    <a [href]="socialMedia.tiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
+                </div>
+            }
+        </div>
+
+
+        <div class="button-wrapper">
+
+            <button
+                class="glass-button action-button"
+                type="button"
+                (click)="toggleMenu('rewards')">
+                Mis Redes
+            </button>
+
+            @if (activeMenu === 'rewards') {
+                <div class="dropdown">
+                    <a [href]="socialMedia.tiktokpers" target="_blank" rel="noopener noreferrer">TikTok</a>
+                    <a [href]="socialMedia.instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a [href]="socialMedia.facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

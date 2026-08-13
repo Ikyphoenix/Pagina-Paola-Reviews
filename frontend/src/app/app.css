@@ -1,0 +1,31 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    min-height:100%;
+}
+
+
+.background {
+    min-height:100vh;
+    background-image: url('/Thermomatic.jfif');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    position:relative;
+}
+
+
+.background::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0);
+    backdrop-filter:blur(50px);
+}
+
+
+.content {
+    position:relative;
+    z-index:1;
+}
